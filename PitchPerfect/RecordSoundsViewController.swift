@@ -22,7 +22,7 @@ import AVFoundation
      
         4) para direcionar a segue de um VC para outro sem usar UI, tem que ir no resumo e arrastar de um VC para outro. Em seguida basta adicionar o caminho colocando o identificador da segue.
               Ex: performSegue(withIdentifier: "stopRecording", sender: audioRecorder.url)
-     
+        5) GitHub
      */
 
     
@@ -44,13 +44,8 @@ import AVFoundation
 
     }
 
-   
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        
-        
     }
     
     
