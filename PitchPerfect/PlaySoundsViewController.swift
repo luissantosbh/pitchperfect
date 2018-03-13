@@ -26,6 +26,7 @@ class PlaySoundsViewController: UIViewController {
     var stopTimer: Timer!
     
     
+    
     // MARK: TAG : ir no inspetor de atributos e mudar a Tag para cada botão. O slow = 0, fast = 1, chipmunk = 2 etc etc
     
     enum ButtonType: Int {case slow = 0, fast, chipmunk, vader, echo, reverb}
@@ -33,7 +34,6 @@ class PlaySoundsViewController: UIViewController {
     
     // MARK: Função tocar o som
     @IBAction func playSoundForButton(_ sender: UIButton) {
-        
         switch(ButtonType(rawValue: sender.tag)!) /*converte a TAG para ButtonType*/{
         case .slow:
             playSound(rate: 0.5)
@@ -47,33 +47,38 @@ class PlaySoundsViewController: UIViewController {
             playSound(echo: true)
         case .reverb:
             playSound(reverb: true)
-            
-      
         }
         
         configureUI(.playing)
-        
     }
     
     @IBAction func stopButtonPressed (_ sender: AnyObject){
        stopAudio()
     }
-    
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        configureButtons()
         setupAudio()
-
     }
     
+    
+    /* MARK: Revisão: Ajusta o contentMode da imageView do botão com o intuito de manter as proporções à medida que o botão tem seu tamanho alterado*/
+        
+    private func configureButtons(){
+        configure(button: snailButton)
+        configure(button: chipmunkButton)
+        configure(button: rabbitButton)
+        configure(button: vaderButton)
+        configure(button: echoButton)
+        configure(button: reverbButton)
+    }
+    
+    private func configure(button: UIButton){
+        button.imageView?.contentMode = .scaleAspectFit
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         configureUI(.notPlaying)
     }
-
-
-
 }
