@@ -23,33 +23,7 @@ import AVFoundation
         super.viewDidLoad()
         stopRecordingButton.isEnabled = false
     }
-<<<<<<< HEAD
-<<<<<<< current
-  
-||||||| after discard
-<<<<<<< HEAD
-    
-||||||| merged common ancestors
 
-   
-    
-=======
-
->>>>>>> 43a3596a69977b3c31075ce1eb22c9feec6238bd
-=======
->>>>>>> before discard
-||||||| merged common ancestors
-<<<<<<< HEAD
-    
-||||||| merged common ancestors
-
-   
-    
-=======
-
->>>>>>> 43a3596a69977b3c31075ce1eb22c9feec6238bd
-=======
->>>>>>> temporario
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
