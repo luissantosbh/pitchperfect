@@ -10,6 +10,42 @@ import UIKit
 import AVFoundation
 
  class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
+<<<<<<< HEAD
+||||||| merged common ancestors
+    
+    
+    /* MARK: DICAS
+     
+        1)  incluir esta classe "AVAudioRecorderDelegate" para delegar a ação de mudar de tela sem usar a segue via UI e sim via código. Sendo assim, o ViewController vai ser o Delegate do AVAudioRecorder.
+     
+        2) na função recordAudio tem que configurar este ViewController com o AVAudioRecorderDelegate adicionando esta linha -> audioRecorder.delegate = self
+     
+        3) incluir a função audioRecorderDidFinishRecording -> esta função vai chamar a transição
+     
+        4) para direcionar a segue de um VC para outro sem usar UI, tem que ir no resumo e arrastar de um VC para outro. Em seguida basta adicionar o caminho colocando o identificador da segue.
+              Ex: performSegue(withIdentifier: "stopRecording", sender: audioRecorder.url)
+     
+     */
+
+    
+=======
+    
+    
+    /* MARK: DICAS
+     
+        1)  incluir esta classe "AVAudioRecorderDelegate" para delegar a ação de mudar de tela sem usar a segue via UI e sim via código. Sendo assim, o ViewController vai ser o Delegate do AVAudioRecorder.
+     
+        2) na função recordAudio tem que configurar este ViewController com o AVAudioRecorderDelegate adicionando esta linha -> audioRecorder.delegate = self
+     
+        3) incluir a função audioRecorderDidFinishRecording -> esta função vai chamar a transição
+     
+        4) para direcionar a segue de um VC para outro sem usar UI, tem que ir no resumo e arrastar de um VC para outro. Em seguida basta adicionar o caminho colocando o identificador da segue.
+              Ex: performSegue(withIdentifier: "stopRecording", sender: audioRecorder.url)
+        5) GitHub
+     */
+
+    
+>>>>>>> 43a3596a69977b3c31075ce1eb22c9feec6238bd
     var audioRecorder: AVAudioRecorder!
 
     // MARK: Outlets
@@ -23,7 +59,15 @@ import AVFoundation
         super.viewDidLoad()
         stopRecordingButton.isEnabled = false
     }
+<<<<<<< HEAD
     
+||||||| merged common ancestors
+
+   
+    
+=======
+
+>>>>>>> 43a3596a69977b3c31075ce1eb22c9feec6238bd
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
