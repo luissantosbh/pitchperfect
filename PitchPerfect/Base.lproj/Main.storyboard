@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17D47" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="h26-WC-VcJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="h26-WC-VcJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,20 +23,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ad6-qC-ExA" userLabel="Record Button">
-                                <rect key="frame" x="110.5" y="256.5" width="155" height="155"/>
+                                <rect key="frame" x="110.5" y="211" width="155" height="155"/>
                                 <state key="normal" image="RecordButton"/>
                                 <connections>
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H9f-AQ-Iau"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obq-WV-1rH" userLabel="Recording Label">
-                                <rect key="frame" x="134" y="419.5" width="107" height="21"/>
+                                <rect key="frame" x="134" y="374" width="107" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuX-Uk-5gv" userLabel="Stop Recording Button">
-                                <rect key="frame" x="155.5" y="448" width="64" height="64"/>
+                                <rect key="frame" x="155.5" y="402.5" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="FDX-Uo-cud"/>
                                     <constraint firstAttribute="height" constant="64" id="iW1-1K-Ona"/>
@@ -54,7 +54,7 @@
                             <constraint firstItem="VuX-Uk-5gv" firstAttribute="centerX" secondItem="obq-WV-1rH" secondAttribute="centerX" id="HMh-M2-myW"/>
                             <constraint firstItem="obq-WV-1rH" firstAttribute="centerX" secondItem="ad6-qC-ExA" secondAttribute="centerX" id="MUc-V1-DBG"/>
                             <constraint firstItem="VuX-Uk-5gv" firstAttribute="top" secondItem="obq-WV-1rH" secondAttribute="bottom" constant="8" id="VzF-zc-Ug1"/>
-                            <constraint firstItem="ad6-qC-ExA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aey-IZ-W9g"/>
+                            <constraint firstItem="ad6-qC-ExA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-45" id="aey-IZ-W9g"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="i7M-SQ-TRm"/>
@@ -203,7 +203,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h26-WC-VcJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ome-R8-ixA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
